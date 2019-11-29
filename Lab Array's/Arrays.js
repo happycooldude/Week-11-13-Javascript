@@ -78,18 +78,16 @@ for(var i = 0; i <arrayEen.length; i++){
     document.getElementById("8").innerHTML += arrayEen[i] + " * " + arraytafels[3] + " = " + (arrayEen[i] * arraytafels[3] + "<br/>");
 }
 
-// var inputgetal, getal = [];
+var inputgetal, getal = [];
 
-// getal.push(inputgetal = prompt("voer een getal in"));
-// for(var i = 0; i <inputgetal; i++){
+inputgetal = prompt("voer een getal in")
+for(var i = 1; i <=inputgetal; i++){
+    getal.push(i);
+    document.getElementById("piramideoplopend").innerHTML += getal;
+    document.getElementById("piramideoplopend").innerHTML += "<br/>";
+}
 
-// document.getElementById("tafeloplopend").innerHTML = getal + "<br/>";
-// }
-
-var num = "";
-var size = prompt("Enter the size of the pyramid");
-for(var i=1; i<=size; i++)
-{
-  num = num + i
-  console.log(num);
+for(var i = inputgetal; i >= 1; i--){
+    document.getElementById("piramideaflopend").innerHTML += getal;
+    document.getElementById("piramideaflopend").innerHTML += "<br/>";
 }

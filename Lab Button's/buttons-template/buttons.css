@@ -1,0 +1,33 @@
+#container{
+    background-image: url(images/bg0.jpg);
+    margin: 0 auto;
+    height: 600px;
+    width: 600px;
+    background-color: black;
+}
+
+#button1{
+    background-color: lightgreen;
+    padding: 15px;
+    margin: 10px;
+}
+
+#button2{
+    background-color: lightgreen;
+    padding: 15px;
+    margin: 10px;
+}
+
+#button3{
+    background-color: lightgreen;
+    padding: 15px;
+    margin: 10px;
+}
+
+#img0{
+    float: right;
+    margin-top: 430px;
+}
+body{
+    background-color: black;
+}
