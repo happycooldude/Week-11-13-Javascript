@@ -1,4 +1,5 @@
 #container{
+    position: relative;
     background-image: url(images/bg0.jpg);
     margin: 0 auto;
     height: 600px;
@@ -25,8 +26,9 @@
 }
 
 #img0{
-    float: right;
-    margin-top: 430px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 body{
     background-color: black;

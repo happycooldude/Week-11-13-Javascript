@@ -20,21 +20,21 @@ function omkeren(){
     week.reverse();
 }
 
-var userInput, namen = [];
-while(userInput !== "n"){
-    namen.push(userInput = prompt("Welke naam wilt u toevoegen?"));
-    userInput = prompt("Wilt u nog een naam aan de lijst toevoegen? y/n");
-}
+// var userInput, namen = [];
+// while(userInput !== "n"){
+//     namen.push(userInput = prompt("Welke naam wilt u toevoegen?"));
+//     userInput = prompt("Wilt u nog een naam aan de lijst toevoegen? y/n");
+// }
 
-document.getElementById("namen").innerHTML = namen;
+// document.getElementById("namen").innerHTML = namen;
 
-function omkeernamen(){
-    namen.reverse();
-}
+// function omkeernamen(){
+//     namen.reverse();
+// }
 
-omkeernamen();
-document.getElementById("namen omgekeerd").innerHTML = namen;
-omkeernamen();
+// omkeernamen();
+// document.getElementById("namen omgekeerd").innerHTML = namen;
+// omkeernamen();
 
 var arrayEen = [1,2,3,4,5,6,7,8,9,10];
 var arrayTwee = [2,4,6,8,10,12,14,16,18,20];
@@ -78,16 +78,18 @@ for(var i = 0; i <arrayEen.length; i++){
     document.getElementById("8").innerHTML += arrayEen[i] + " * " + arraytafels[3] + " = " + (arrayEen[i] * arraytafels[3] + "<br/>");
 }
 
-var inputgetal, getal = [];
+var inputgetal, getallen = [];
 
-inputgetal = prompt("voer een getal in")
+inputgetal = prompt("voer een getallen in");
 for(var i = 1; i <=inputgetal; i++){
-    getal.push(i);
-    document.getElementById("piramideoplopend").innerHTML += getal;
-    document.getElementById("piramideoplopend").innerHTML += "<br/>";
+    getallen.push(i);
+    document.getElementById("piramideoplopend").innerHTML += `${getallen} <br/>`;
 }
 
+document.getElementById("arrayop").innerHTML +=  `array : ${getallen}`;
+document.getElementById("array").innerHTML +=  `array : ${getallen}`;
+
 for(var i = inputgetal; i >= 1; i--){
-    document.getElementById("piramideaflopend").innerHTML += getal;
-    document.getElementById("piramideaflopend").innerHTML += "<br/>";
+    document.getElementById("piramideaflopend").innerHTML += `${getallen} <br/>`;
+    getallen.pop();
 }
