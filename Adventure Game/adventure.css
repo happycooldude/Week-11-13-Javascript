@@ -1,0 +1,23 @@
+#game-container{
+    position: relative;
+    width: 1000px;
+    height: 700px;
+    background-color: gray;
+    margin: 0 auto;
+}
+
+#game-buttons{
+    position: absolute;
+    right: 40%;
+    bottom: 0px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+#title{
+    text-align: center;
+}
+
+#description{
+    text-align: center;
+}
